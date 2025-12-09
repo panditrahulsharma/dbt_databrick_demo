@@ -1,21 +1,21 @@
 dbt_databrick_demo:
   target: dev
   outputs:
-    dev:
-      catalog: '{{ env_var(''DBT_CATALOG'') }}'
-      host: '{{ env_var(''DATABRICKS_HOST'') }}'
-      http_path: '{{ env_var(''DBT_HTTP_PATH'') }}'
-      schema: bronze
-      threads: 4
-      token: '{{ env_var(''DBT_ENV_SECRET_DB_TOKEN'') }}'
-      type: databricks
 
-    prod:
-      catalog: '{{ env_var(''DBT_CATALOG_PROD'') }}'
-      host: '{{ env_var(''DATABRICKS_HOST_PROD'') }}'
-      http_path: '{{ env_var(''DBT_HTTP_PATH_PROD'') }}'
-      schema: bronze
-      threads: 4
-      token: '{{ env_var(''DBT_ENV_SECRET_DB_TOKEN_PROD'') }}'
+    dev:
       type: databricks
-      
+      catalog: "{{ env_var('DBT_CATALOG') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DBT_HTTP_PATH') }}"
+      schema: "bronze"
+      threads: 1
+      token: "{{ env_var('DBT_ENV_SECRET_DB_TOKEN') }}"
+
+    project1_prod:
+      type: databricks
+      catalog: "{{ env_var('DBT_CATALOG_PROD') }}"
+      host: "{{ env_var('DATABRICKS_HOST_PROD') }}"
+      http_path: "{{ env_var('DBT_HTTP_PATH_PROD') }}"
+      schema: "bronze"
+      threads: 4
+      token: "{{ env_var('DBT_ENV_SECRET_DB_TOKEN_PROD') }}"

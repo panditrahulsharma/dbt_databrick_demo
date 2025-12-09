@@ -1,3 +1,9 @@
+## Features
+    1. Multi Environment Support
+    2. ci/cd pipeline support
+    3. Load Data from External source 
+    4. Gold Layer for Business
+
 ## 🚀 Project Overview
 ```
 The project simulates a small e-commerce dataset:
@@ -43,7 +49,10 @@ It demonstrates:
 ## Commands
     >>> source .env
     >>> dbt seed (first time create table)
+    for production
+    >>> dbt seed --target project1_prod 
 
     >>> dbt run --select project_1 (run project_1)
 
-    >>> dbt run --select project_1 --target prod
+    >>> dbt run --select project_1 --target project1_prod
+

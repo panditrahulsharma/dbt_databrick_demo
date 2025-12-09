@@ -1,6 +1,5 @@
 sources:
   - name: bronze_database
-    database: unified_data_platform  
     schema: bronze  
     tables:
       - name: customers

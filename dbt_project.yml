@@ -34,3 +34,22 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+  udp_example:
+    # Applies to all files under models/example/
+    bronze_layer:
+      +schema:  bronze
+      +tags:
+        - bronze_layer
+      +materialized: ephemeral
+
+    silver_layer:
+      +schema:  silver
+      +tags:
+        - silver_layer
+      +materialized: table
+      
+    gold_layer:
+      +schema:  gold
+      +tags:
+        - gold_layer
+      +materialized: table

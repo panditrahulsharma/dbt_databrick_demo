@@ -1,0 +1,4 @@
+customer_id,name,email,join_date
+1,Alice,alice@example.com,2024-01-05
+2,Bob,bob@example.com,2024-02-12
+3,Charlie,charlie@example.com,2024-03-20

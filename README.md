@@ -23,6 +23,8 @@ https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM
 --- now test the connection and files 
 >>> dbt debug
 
+--- Load Data into Databricks Table
+>>> dbt seed
 
 
 ## write steps which is p1

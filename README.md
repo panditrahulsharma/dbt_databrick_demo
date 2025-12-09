@@ -11,7 +11,7 @@
 
 ---
 
-# 🛠️ DBT Installation Guide
+## 🛠️ DBT Installation Guide
 
 ### Install DBT (Core + Databricks Adapter)
 
@@ -27,7 +27,7 @@ dbt --version
 
 ---
 
-# 🚀 Initialize a New DBT Project
+## 🚀 Initialize a New DBT Project
 
 ```bash
 dbt init
@@ -44,25 +44,25 @@ rm -rf /Users/abc/.dbt/profiles.yml
 
 ---
 
-# 🔧 Test DBT Setup
+## 🔧 Test DBT Setup
 
 ```bash
 dbt debug
 ```
 
-# 📥 Load Seed Data into Databricks
+## 📥 Load Seed Data into Databricks
 
 ```bash
 dbt seed
 ```
 
-# 🏆 Run Gold Layer Models
+## 🏆 Run Gold Layer Models
 
 ```bash
 dbt run --select project_1
 ```
 
-# 📘 DBT Documentation Site
+## 📘 DBT Documentation Site
 
 ```bash
 dbt docs generate
@@ -71,7 +71,7 @@ dbt docs serve
 
 ---
 
-# 📌 Project Phase 1 (P1) Required Steps
+## 📌 Project Phase 1 (P1) Required Steps
 
 A strong DBT project should include the following:
 

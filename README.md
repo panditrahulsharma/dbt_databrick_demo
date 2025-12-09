@@ -75,7 +75,9 @@ dbt docs serve
 
 A strong DBT project should include the following:
 
-* **Test Cases** (generic + custom)
+* **Test Cases** (generic + custom + unit testing)
+* **column level tagging and discription**
+* **freshness test**
 * **Table Descriptions & Documentation**
 * **Generic Test Cases** (unique, not null, relationships, accepted values)
 * **Deployment Steps** (Dev → QA → Prod)

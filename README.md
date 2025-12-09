@@ -26,6 +26,13 @@ https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM
 --- Load Data into Databricks Table
 >>> dbt seed
 
+--- run gold layer
+>>> dbt run --select project_1
+
+--- dbt docs server
+>>> dbt docs generate
+>>> dbt docs serve
+
 
 ## write steps which is p1
 exm:

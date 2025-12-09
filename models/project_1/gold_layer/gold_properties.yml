@@ -1,0 +1,20 @@
+models:
+  - name: check_data_counts
+    config:
+      schema: gold
+      database: unified_data_platform
+      materialized: table
+      tags: ['contains_pii']
+
+  - name: customer_sales_summary
+    config:
+      schema: gold
+      database: unified_data_platform
+      materialized: table
+
+
+  - name: my_orders_summary
+    config:
+      schema: gold
+      database: unified_data_platform
+      materialized: table

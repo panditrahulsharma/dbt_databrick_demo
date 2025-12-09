@@ -1,0 +1,21 @@
+sources:
+  - name: bronze_database
+    database: unified_data_platform  
+    schema: bronze  
+    tables:
+      - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
+
+          - name: join_date
+            tests:
+              - unique:
+                  config:
+                    severity: warn
+
+      - name: products
+      - name: order_items
+      - name: orders

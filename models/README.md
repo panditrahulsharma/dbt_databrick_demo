@@ -5,6 +5,8 @@
     4. Gold Layer for Business
 
 ## 🚀 Project Overview
+![Alt text](./images/lineage.png)
+
 ```
 The project simulates a small e-commerce dataset:
 
@@ -56,3 +58,29 @@ It demonstrates:
 
     >>> dbt run --select project_1 --target project1_prod
 
+## Output
+```
+select * from unified_data_platform_prod.bronze.products
+
+-- before running the job
+select * from unified_data_platform_prod.gold.check_data_counts
+
+-- table_name	record_count
+-- customers	3
+-- order_items	4
+-- orders	3
+-- products	3
+
+
+-- after inserting the records
+insert into unified_data_platform_prod.bronze.products(product_id, name, category,price)
+values(4, 'product4', 'category4',1200);
+-- trigger databricks dbt job and test the records
+select * from unified_data_platform_prod.gold.check_data_counts
+
+-- table_name	record_count
+-- customers	3
+-- order_items	4
+-- orders	3
+-- products	3
+```

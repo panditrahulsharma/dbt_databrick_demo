@@ -1,15 +1,3 @@
-# DBT Setup & Resources
-
-## 📚 Helpful Articles
-
-* [https://medium.com/@reshma.varghese.tech/how-i-built-a-mini-data-pipeline-using-dbt-sqlite-e3692288f974](https://medium.com/@reshma.varghese.tech/how-i-built-a-mini-data-pipeline-using-dbt-sqlite-e3692288f974)
-* [https://medium.com/dbsql-sme-engineering/how-to-build-an-end-to-end-testing-pipeline-with-dbt-on-databricks-cb6e179e646c](https://medium.com/dbsql-sme-engineering/how-to-build-an-end-to-end-testing-pipeline-with-dbt-on-databricks-cb6e179e646c)
-
-## 🎓 Course Guide
-
-* [https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM](https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM)
-
----
 
 ## 🛠️ DBT Installation Guide
 
@@ -62,6 +50,7 @@ dbt seed
 dbt run --select project_1
 ```
 
+
 ## 📘 DBT Documentation Site
 
 ```bash
@@ -70,6 +59,24 @@ dbt docs serve
 ```
 
 ---
+
+# DBT Setup & Resources
+
+## 📚 Helpful Articles
+
+* [https://medium.com/@reshma.varghese.tech/how-i-built-a-mini-data-pipeline-using-dbt-sqlite-e3692288f974](https://medium.com/@reshma.varghese.tech/how-i-built-a-mini-data-pipeline-using-dbt-sqlite-e3692288f974)
+* [https://medium.com/dbsql-sme-engineering/how-to-build-an-end-to-end-testing-pipeline-with-dbt-on-databricks-cb6e179e646c](https://medium.com/dbsql-sme-engineering/how-to-build-an-end-to-end-testing-pipeline-with-dbt-on-databricks-cb6e179e646c)
+
+## Building a Production-Ready dbt CI/CD Pipeline
+
+* https://aradsouza.medium.com/building-a-production-ready-dbt-ci-cd-pipeline-complete-series-73a7c088008f
+
+## 🎓 Course Guide
+
+* [https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM](https://www.udemy.com/course/dbt-on-databricks/?couponCode=IND21PM)
+
+---
+
 
 ## 📌 Project Phase 1 (P1) Required Steps
 

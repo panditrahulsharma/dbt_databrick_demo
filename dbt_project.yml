@@ -52,3 +52,4 @@ models:
       +tags:
         - gold_layer
       +materialized: table
+  

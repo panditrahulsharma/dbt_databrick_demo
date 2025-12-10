@@ -11,7 +11,6 @@ models:
       schema: gold
       materialized: table
 
-
   - name: my_orders_summary
     config:
       schema: gold

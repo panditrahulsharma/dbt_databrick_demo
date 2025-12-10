@@ -4,13 +4,13 @@
 -- Purpose: Quick validation check to confirm seed tables loaded correctly
 
 with table_counts as (
-    select 'customers' as table_name, count(*) as record_count from {{ source('bronze_database', 'customers') }}
+    select 'customers' as table_name, count(*) as record_count from {{ref('bronze_customers')}}
     union all
-    select 'products', count(*) from {{ source('bronze_database', 'products') }}
+    select 'products'  as table_name, count(*) as record_count from {{ref('bronze_products')}}
     union all
-    select 'orders', count(*) from {{ source('bronze_database', 'orders') }}
+    select 'orders'  as table_name, count(*) as record_count from {{ref('bronze_orders')}} 
     union all
-    select 'order_items', count(*) from {{ source('bronze_database', 'order_items') }}
+    select 'order_items'  as table_name, count(*) as record_count from {{ref('bronze_order_items')}}
 )
 
 select * from table_counts

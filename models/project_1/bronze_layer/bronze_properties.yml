@@ -1,0 +1,23 @@
+#schema already defined in dbt_project.yml
+models:
+  - name: bronze_customers
+    config:
+      materialized: view
+      tags: ['contains_pii']
+      schema: bronze
+
+  - name: bronze_orders
+    config:
+      materialized: view
+      schema: bronze
+
+
+  - name: bronze_order_items
+    config:
+      materialized: view
+      schema: bronze
+
+  - name: bronze_products
+    config:
+      materialized: view
+      schema: bronze

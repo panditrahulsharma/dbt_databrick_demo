@@ -10,10 +10,10 @@ with order_details as (
         c.customer_id,
         c.name as customer_name,
         sum(p.price * oi.quantity) as order_total
-    from {{ source('bronze_database', 'orders') }} o
-    join {{ source('bronze_database', 'order_items') }} oi on o.order_id = oi.order_id
-    join {{ source('bronze_database', 'products') }} p on oi.product_id = p.product_id
-    join {{ source('bronze_database', 'customers') }} c on o.customer_id = c.customer_id
+    from {{ref('bronze_orders')}} o
+    join {{ref('bronze_order_items')}} oi on o.order_id = oi.order_id
+    join {{ref('bronze_products')}} p on oi.product_id = p.product_id
+    join {{ref('bronze_customers')}} c on o.customer_id = c.customer_id
     group by 1, 2, 3
 ),
 

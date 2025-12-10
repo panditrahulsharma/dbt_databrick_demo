@@ -1,6 +1,6 @@
 sources:
   - name: bronze_database
-    schema: bronze  
+    schema: landing  
     tables:
       - name: customers
         columns:
@@ -18,3 +18,4 @@ sources:
       - name: products
       - name: order_items
       - name: orders
+

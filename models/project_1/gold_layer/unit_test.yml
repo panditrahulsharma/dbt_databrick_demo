@@ -1,0 +1,42 @@
+unit_tests:
+  - name: check_data_counts_model_testing
+    model: ref('check_data_counts')
+
+    given:
+      - input: ref('bronze_customers')
+        rows:
+          - customer_id: 1
+            name: "Alice"
+            email: "alice@example.com"
+            join_date: "2024-01-05"
+
+      - input: ref('bronze_products')
+        rows:
+          - product_id: 1
+            name: "Laptop"
+            category: "Electronics"
+            price: 1200
+
+      - input: ref('bronze_orders')
+        rows:
+          - order_id: 1
+            customer_id: 1
+            order_date: "2024-04-01"
+
+      - input: ref('bronze_order_items')
+        rows:
+          - order_item_id: 1
+            order_id: 1
+            product_id: 1
+            quantity: 1
+
+    expect:
+      rows:
+        - table_name: "customers"
+          record_count: 1
+        - table_name: "products"
+          record_count: 1
+        - table_name: "orders"
+          record_count: 1
+        - table_name: "order_items"
+          record_count: 1

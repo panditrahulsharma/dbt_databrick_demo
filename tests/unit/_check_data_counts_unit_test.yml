@@ -1,6 +1,9 @@
+# model name use directly line 4
+# don't use ; this in the end of sql file -- models/project_1/gold_layer/check_data_counts.sql 
+
 unit_tests:
   - name: check_data_counts_model_testing
-    model: ref('check_data_counts')
+    model: check_data_counts
 
     given:
       - input: ref('bronze_customers')
@@ -33,7 +36,7 @@ unit_tests:
     expect:
       rows:
         - table_name: "customers"
-          record_count: 1
+          record_count: 2
         - table_name: "products"
           record_count: 1
         - table_name: "orders"

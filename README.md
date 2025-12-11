@@ -82,15 +82,14 @@ dbt docs serve
 
 A strong DBT project should include the following:
 
-* **Test Cases** (generic + custom + unit testing)
+* **Test Cases** (generic + custom + unit testing) : Implemented
 * **column level tagging and discription**
-* **freshness test**
+* **freshness test** 
 * **Table Descriptions & Documentation**
-* **Generic Test Cases** (unique, not null, relationships, accepted values)
-* **Deployment Steps** (Dev → QA → Prod)
-* **Multiple Architecture Patterns** (Medallion architecture: Bronze → Silver → Gold)
-* **Incremental Models & Snapshots**
-* **Multi‑environment Profiles (`profiles.yml`)**
+* **Generic Test Cases** (unique, not null, relationships, accepted values) : Implemented
+* **Deployment Steps** (Dev → QA → Prod): Implemented
+* **Incremental Models & Snapshots** 
+* **Multi‑environment Profiles (`profiles.yml`)** : Implemented
 * **Schema Documentation Example:**
   [https://github.com/reshmavarghese15/data-pipeline-dbt-aws-demo/blob/main/data_pipeline_dbt_aws_demo/models/example/schema.yml](https://github.com/reshmavarghese15/data-pipeline-dbt-aws-demo/blob/main/data_pipeline_dbt_aws_demo/models/example/schema.yml)
 * **Freshness Checks** (`sources:` with `freshness:` block)

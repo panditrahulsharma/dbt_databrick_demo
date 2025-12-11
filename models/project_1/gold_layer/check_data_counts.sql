@@ -14,4 +14,4 @@ with table_counts as (
 )
 
 select * from table_counts
-order by table_name;
+order by table_name

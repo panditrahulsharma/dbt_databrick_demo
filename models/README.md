@@ -5,7 +5,7 @@
     4. Gold Layer for Business
 
 ## 🚀 Project Overview
-![Alt text](./images/lineage.png)
+![Alt text](./images/lineage1.png)
 
 ```
 The project simulates a small e-commerce dataset:

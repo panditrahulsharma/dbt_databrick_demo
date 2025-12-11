@@ -15,3 +15,15 @@ models:
     config:
       schema: gold
       materialized: table
+
+  - name: daily_orders_increamental
+    config:
+      schema: gold
+      materialized: incremental
+      unique_key: order_id
+      incremental_strategy: merge
+      partition_by: order_date
+      tags: ['time_partitioned','orders_incremental']
+      
+
+      

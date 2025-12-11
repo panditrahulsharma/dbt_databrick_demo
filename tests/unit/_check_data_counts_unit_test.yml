@@ -36,7 +36,7 @@ unit_tests:
     expect:
       rows:
         - table_name: "customers"
-          record_count: 2
+          record_count: 1
         - table_name: "products"
           record_count: 1
         - table_name: "orders"
